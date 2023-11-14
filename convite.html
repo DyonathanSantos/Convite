@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./formulario.css" />
+    <title>Confirmação de Presença</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+        <h2>Convidados</h2>
+        </section>
+
+        <form id="form" class="form">
+            <div class="form-content">
+                <label for="NOME">Nome</label>
+                 <input 
+                type="text" 
+                name="NOME" 
+                id="NOME"
+                placeholder="Digite seu nome..."
+                >
+                <a>Coloque seu nome</a>
+
+            </div>
+
+            <div class="form-content">
+                <label  for="CPF">CPF</label>
+                <input 
+                maxlength="2"
+                type="number" 
+                name="CPF" 
+                id="CPF"
+               placeholder="Digite seu CPF..."
+                >
+                <a>Coloque seu CPF</a>
+                    
+            </div>
+
+            <div class="form-content">
+                <label for="IDADE">IDADE</label>
+                <input 
+                type="number" 
+                name="IDADE" 
+                id="IDADE"
+                placeholder="Digite sua idade..."
+                >
+                <a>Coloque seu CPF</a>
+       
+        </div>
+
+            <button type="text" onclick="adicionarCampo()" class="adicionar">+</button>
+            <button type="submit">Confimar</button>
+                
+            
+        </form>
+</div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
